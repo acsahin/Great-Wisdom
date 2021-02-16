@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08DA3D8325DBBD3D00EF4FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D8225DBBD3D00EF4FB6 /* AppDelegate.swift */; };
+		08DA3D8525DBBD3D00EF4FB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D8425DBBD3D00EF4FB6 /* SceneDelegate.swift */; };
+		08DA3D8725DBBD3D00EF4FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */; };
+		08DA3D8A25DBBD3D00EF4FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DA3D8825DBBD3D00EF4FB6 /* Main.storyboard */; };
+		08DA3D8C25DBBD3E00EF4FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08DA3D8B25DBBD3E00EF4FB6 /* Assets.xcassets */; };
+		08DA3D8F25DBBD3E00EF4FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DA3D8D25DBBD3E00EF4FB6 /* LaunchScreen.storyboard */; };
+		08DA3D9A25DBBD3E00EF4FB6 /* Great_WisdomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D9925DBBD3E00EF4FB6 /* Great_WisdomTests.swift */; };
+		08DA3DA525DBBD3E00EF4FB6 /* Great_WisdomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3DA425DBBD3E00EF4FB6 /* Great_WisdomUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08DA3D9625DBBD3E00EF4FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DA3D7725DBBD3D00EF4FB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08DA3D7E25DBBD3D00EF4FB6;
+			remoteInfo = "Great Wisdom";
+		};
+		08DA3DA125DBBD3E00EF4FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08DA3D7725DBBD3D00EF4FB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08DA3D7E25DBBD3D00EF4FB6;
+			remoteInfo = "Great Wisdom";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08DA3D7F25DBBD3D00EF4FB6 /* Great Wisdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Great Wisdom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08DA3D8225DBBD3D00EF4FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08DA3D8425DBBD3D00EF4FB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08DA3D8925DBBD3D00EF4FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08DA3D8B25DBBD3E00EF4FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08DA3D8E25DBBD3E00EF4FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08DA3D9025DBBD3E00EF4FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DA3D9525DBBD3E00EF4FB6 /* Great WisdomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Great WisdomTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08DA3D9925DBBD3E00EF4FB6 /* Great_WisdomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Great_WisdomTests.swift; sourceTree = "<group>"; };
+		08DA3D9B25DBBD3E00EF4FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DA3DA025DBBD3E00EF4FB6 /* Great WisdomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Great WisdomUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08DA3DA425DBBD3E00EF4FB6 /* Great_WisdomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Great_WisdomUITests.swift; sourceTree = "<group>"; };
+		08DA3DA625DBBD3E00EF4FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08DA3D7C25DBBD3D00EF4FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DA3D9225DBBD3E00EF4FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DA3D9D25DBBD3E00EF4FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08DA3D7625DBBD3D00EF4FB6 = {
+			isa = PBXGroup;
+			children = (
+				08DA3D8125DBBD3D00EF4FB6 /* Great Wisdom */,
+				08DA3D9825DBBD3E00EF4FB6 /* Great WisdomTests */,
+				08DA3DA325DBBD3E00EF4FB6 /* Great WisdomUITests */,
+				08DA3D8025DBBD3D00EF4FB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08DA3D8025DBBD3D00EF4FB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08DA3D7F25DBBD3D00EF4FB6 /* Great Wisdom.app */,
+				08DA3D9525DBBD3E00EF4FB6 /* Great WisdomTests.xctest */,
+				08DA3DA025DBBD3E00EF4FB6 /* Great WisdomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08DA3D8125DBBD3D00EF4FB6 /* Great Wisdom */ = {
+			isa = PBXGroup;
+			children = (
+				08DA3D8225DBBD3D00EF4FB6 /* AppDelegate.swift */,
+				08DA3D8425DBBD3D00EF4FB6 /* SceneDelegate.swift */,
+				08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */,
+				08DA3D8825DBBD3D00EF4FB6 /* Main.storyboard */,
+				08DA3D8B25DBBD3E00EF4FB6 /* Assets.xcassets */,
+				08DA3D8D25DBBD3E00EF4FB6 /* LaunchScreen.storyboard */,
+				08DA3D9025DBBD3E00EF4FB6 /* Info.plist */,
+			);
+			path = "Great Wisdom";
+			sourceTree = "<group>";
+		};
+		08DA3D9825DBBD3E00EF4FB6 /* Great WisdomTests */ = {
+			isa = PBXGroup;
+			children = (
+				08DA3D9925DBBD3E00EF4FB6 /* Great_WisdomTests.swift */,
+				08DA3D9B25DBBD3E00EF4FB6 /* Info.plist */,
+			);
+			path = "Great WisdomTests";
+			sourceTree = "<group>";
+		};
+		08DA3DA325DBBD3E00EF4FB6 /* Great WisdomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08DA3DA425DBBD3E00EF4FB6 /* Great_WisdomUITests.swift */,
+				08DA3DA625DBBD3E00EF4FB6 /* Info.plist */,
+			);
+			path = "Great WisdomUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08DA3D7E25DBBD3D00EF4FB6 /* Great Wisdom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08DA3DA925DBBD3E00EF4FB6 /* Build configuration list for PBXNativeTarget "Great Wisdom" */;
+			buildPhases = (
+				08DA3D7B25DBBD3D00EF4FB6 /* Sources */,
+				08DA3D7C25DBBD3D00EF4FB6 /* Frameworks */,
+				08DA3D7D25DBBD3D00EF4FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Great Wisdom";
+			productName = "Great Wisdom";
+			productReference = 08DA3D7F25DBBD3D00EF4FB6 /* Great Wisdom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08DA3D9425DBBD3E00EF4FB6 /* Great WisdomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08DA3DAC25DBBD3E00EF4FB6 /* Build configuration list for PBXNativeTarget "Great WisdomTests" */;
+			buildPhases = (
+				08DA3D9125DBBD3E00EF4FB6 /* Sources */,
+				08DA3D9225DBBD3E00EF4FB6 /* Frameworks */,
+				08DA3D9325DBBD3E00EF4FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08DA3D9725DBBD3E00EF4FB6 /* PBXTargetDependency */,
+			);
+			name = "Great WisdomTests";
+			productName = "Great WisdomTests";
+			productReference = 08DA3D9525DBBD3E00EF4FB6 /* Great WisdomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08DA3D9F25DBBD3E00EF4FB6 /* Great WisdomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08DA3DAF25DBBD3E00EF4FB6 /* Build configuration list for PBXNativeTarget "Great WisdomUITests" */;
+			buildPhases = (
+				08DA3D9C25DBBD3E00EF4FB6 /* Sources */,
+				08DA3D9D25DBBD3E00EF4FB6 /* Frameworks */,
+				08DA3D9E25DBBD3E00EF4FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08DA3DA225DBBD3E00EF4FB6 /* PBXTargetDependency */,
+			);
+			name = "Great WisdomUITests";
+			productName = "Great WisdomUITests";
+			productReference = 08DA3DA025DBBD3E00EF4FB6 /* Great WisdomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08DA3D7725DBBD3D00EF4FB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					08DA3D7E25DBBD3D00EF4FB6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					08DA3D9425DBBD3E00EF4FB6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 08DA3D7E25DBBD3D00EF4FB6;
+					};
+					08DA3D9F25DBBD3E00EF4FB6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 08DA3D7E25DBBD3D00EF4FB6;
+					};
+				};
+			};
+			buildConfigurationList = 08DA3D7A25DBBD3D00EF4FB6 /* Build configuration list for PBXProject "Great Wisdom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08DA3D7625DBBD3D00EF4FB6;
+			productRefGroup = 08DA3D8025DBBD3D00EF4FB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08DA3D7E25DBBD3D00EF4FB6 /* Great Wisdom */,
+				08DA3D9425DBBD3E00EF4FB6 /* Great WisdomTests */,
+				08DA3D9F25DBBD3E00EF4FB6 /* Great WisdomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08DA3D7D25DBBD3D00EF4FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DA3D8F25DBBD3E00EF4FB6 /* LaunchScreen.storyboard in Resources */,
+				08DA3D8C25DBBD3E00EF4FB6 /* Assets.xcassets in Resources */,
+				08DA3D8A25DBBD3D00EF4FB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DA3D9325DBBD3E00EF4FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DA3D9E25DBBD3E00EF4FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08DA3D7B25DBBD3D00EF4FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DA3D8725DBBD3D00EF4FB6 /* ViewController.swift in Sources */,
+				08DA3D8325DBBD3D00EF4FB6 /* AppDelegate.swift in Sources */,
+				08DA3D8525DBBD3D00EF4FB6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DA3D9125DBBD3E00EF4FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DA3D9A25DBBD3E00EF4FB6 /* Great_WisdomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08DA3D9C25DBBD3E00EF4FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DA3DA525DBBD3E00EF4FB6 /* Great_WisdomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08DA3D9725DBBD3E00EF4FB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08DA3D7E25DBBD3D00EF4FB6 /* Great Wisdom */;
+			targetProxy = 08DA3D9625DBBD3E00EF4FB6 /* PBXContainerItemProxy */;
+		};
+		08DA3DA225DBBD3E00EF4FB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08DA3D7E25DBBD3D00EF4FB6 /* Great Wisdom */;
+			targetProxy = 08DA3DA125DBBD3E00EF4FB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08DA3D8825DBBD3D00EF4FB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08DA3D8925DBBD3D00EF4FB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08DA3D8D25DBBD3E00EF4FB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08DA3D8E25DBBD3E00EF4FB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08DA3DA725DBBD3E00EF4FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08DA3DA825DBBD3E00EF4FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08DA3DAA25DBBD3E00EF4FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Great Wisdom/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acs.Great-Wisdom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08DA3DAB25DBBD3E00EF4FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Great Wisdom/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acs.Great-Wisdom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08DA3DAD25DBBD3E00EF4FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Great WisdomTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acs.Great-WisdomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Great Wisdom.app/Great Wisdom";
+			};
+			name = Debug;
+		};
+		08DA3DAE25DBBD3E00EF4FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Great WisdomTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acs.Great-WisdomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Great Wisdom.app/Great Wisdom";
+			};
+			name = Release;
+		};
+		08DA3DB025DBBD3E00EF4FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Great WisdomUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acs.Great-WisdomUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Great Wisdom";
+			};
+			name = Debug;
+		};
+		08DA3DB125DBBD3E00EF4FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Great WisdomUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acs.Great-WisdomUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Great Wisdom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08DA3D7A25DBBD3D00EF4FB6 /* Build configuration list for PBXProject "Great Wisdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DA3DA725DBBD3E00EF4FB6 /* Debug */,
+				08DA3DA825DBBD3E00EF4FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08DA3DA925DBBD3E00EF4FB6 /* Build configuration list for PBXNativeTarget "Great Wisdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DA3DAA25DBBD3E00EF4FB6 /* Debug */,
+				08DA3DAB25DBBD3E00EF4FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08DA3DAC25DBBD3E00EF4FB6 /* Build configuration list for PBXNativeTarget "Great WisdomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DA3DAD25DBBD3E00EF4FB6 /* Debug */,
+				08DA3DAE25DBBD3E00EF4FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08DA3DAF25DBBD3E00EF4FB6 /* Build configuration list for PBXNativeTarget "Great WisdomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08DA3DB025DBBD3E00EF4FB6 /* Debug */,
+				08DA3DB125DBBD3E00EF4FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08DA3D7725DBBD3D00EF4FB6 /* Project object */;
+}
