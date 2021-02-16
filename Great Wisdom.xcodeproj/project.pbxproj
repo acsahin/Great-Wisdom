@@ -24,6 +24,7 @@
 		08DA3D8F25DBBD3E00EF4FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DA3D8D25DBBD3E00EF4FB6 /* LaunchScreen.storyboard */; };
 		08DA3D9A25DBBD3E00EF4FB6 /* Great_WisdomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D9925DBBD3E00EF4FB6 /* Great_WisdomTests.swift */; };
 		08DA3DA525DBBD3E00EF4FB6 /* Great_WisdomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3DA425DBBD3E00EF4FB6 /* Great_WisdomUITests.swift */; };
+		FD4147F6C496B84E80C5381B /* Pods_Great_Wisdom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C71889905B556930A66F66 /* Pods_Great_Wisdom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,9 @@
 		08DA3DA025DBBD3E00EF4FB6 /* Great WisdomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Great WisdomUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DA3DA425DBBD3E00EF4FB6 /* Great_WisdomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Great_WisdomUITests.swift; sourceTree = "<group>"; };
 		08DA3DA625DBBD3E00EF4FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32DCC760A02C1FE30792043F /* Pods-Great Wisdom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Great Wisdom.debug.xcconfig"; path = "Target Support Files/Pods-Great Wisdom/Pods-Great Wisdom.debug.xcconfig"; sourceTree = "<group>"; };
+		4C9DE204C70C7706CA03A15E /* Pods-Great Wisdom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Great Wisdom.release.xcconfig"; path = "Target Support Files/Pods-Great Wisdom/Pods-Great Wisdom.release.xcconfig"; sourceTree = "<group>"; };
+		C2C71889905B556930A66F66 /* Pods_Great_Wisdom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Great_Wisdom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4147F6C496B84E80C5381B /* Pods_Great_Wisdom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +110,8 @@
 				08DA3D9825DBBD3E00EF4FB6 /* Great WisdomTests */,
 				08DA3DA325DBBD3E00EF4FB6 /* Great WisdomUITests */,
 				08DA3D8025DBBD3D00EF4FB6 /* Products */,
+				42264264440DD6E0D8FED3DE /* Pods */,
+				5B3405390C6C3BD80E71EBF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +158,24 @@
 			path = "Great WisdomUITests";
 			sourceTree = "<group>";
 		};
+		42264264440DD6E0D8FED3DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32DCC760A02C1FE30792043F /* Pods-Great Wisdom.debug.xcconfig */,
+				4C9DE204C70C7706CA03A15E /* Pods-Great Wisdom.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B3405390C6C3BD80E71EBF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2C71889905B556930A66F66 /* Pods_Great_Wisdom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08DA3DA925DBBD3E00EF4FB6 /* Build configuration list for PBXNativeTarget "Great Wisdom" */;
 			buildPhases = (
+				DE080D5F9E0109206207C7E8 /* [CP] Check Pods Manifest.lock */,
 				08DA3D7B25DBBD3D00EF4FB6 /* Sources */,
 				08DA3D7C25DBBD3D00EF4FB6 /* Frameworks */,
 				08DA3D7D25DBBD3D00EF4FB6 /* Resources */,
+				D774CDDAC33E72F71C660987 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +311,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D774CDDAC33E72F71C660987 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Great Wisdom/Pods-Great Wisdom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Great Wisdom/Pods-Great Wisdom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Great Wisdom/Pods-Great Wisdom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE080D5F9E0109206207C7E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Great Wisdom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08DA3D7B25DBBD3D00EF4FB6 /* Sources */ = {
@@ -465,6 +534,7 @@
 		};
 		08DA3DAA25DBBD3E00EF4FB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32DCC760A02C1FE30792043F /* Pods-Great Wisdom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,6 +553,7 @@
 		};
 		08DA3DAB25DBBD3E00EF4FB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9DE204C70C7706CA03A15E /* Pods-Great Wisdom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
