@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089FEA2F25DD7DAB00787A4A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FEA2D25DD7DAB00787A4A /* TableViewCell.swift */; };
+		089FEA3025DD7DAB00787A4A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089FEA2E25DD7DAB00787A4A /* TableViewCell.xib */; };
 		08AAFCAD25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */; };
 		08AAFCAE25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */; };
 		08AAFCAF25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		089FEA2D25DD7DAB00787A4A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		089FEA2E25DD7DAB00787A4A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-Light.ttf"; sourceTree = "<group>"; };
 		08AAFCAB25DBEABD00A90B2D /* OpenSansCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		08AAFCAC25DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-Bold.ttf"; sourceTree = "<group>"; };
@@ -93,6 +97,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		089E9EFB25DD4F65009FCCCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		089E9EFC25DD4F6D009FCCCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08DA3D8D25DBBD3E00EF4FB6 /* LaunchScreen.storyboard */,
+				08DA3D8825DBBD3D00EF4FB6 /* Main.storyboard */,
+				089FEA2D25DD7DAB00787A4A /* TableViewCell.swift */,
+				089FEA2E25DD7DAB00787A4A /* TableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		089E9EFD25DD4F73009FCCCD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		08AAFCA625DBEA9800A90B2D /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,13 +158,13 @@
 		08DA3D8125DBBD3D00EF4FB6 /* Great Wisdom */ = {
 			isa = PBXGroup;
 			children = (
+				089E9EFD25DD4F73009FCCCD /* Controller */,
+				089E9EFC25DD4F6D009FCCCD /* View */,
+				089E9EFB25DD4F65009FCCCD /* Model */,
 				08AAFCA625DBEA9800A90B2D /* fonts */,
 				08DA3D8225DBBD3D00EF4FB6 /* AppDelegate.swift */,
 				08DA3D8425DBBD3D00EF4FB6 /* SceneDelegate.swift */,
-				08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */,
-				08DA3D8825DBBD3D00EF4FB6 /* Main.storyboard */,
 				08DA3D8B25DBBD3E00EF4FB6 /* Assets.xcassets */,
-				08DA3D8D25DBBD3E00EF4FB6 /* LaunchScreen.storyboard */,
 				08DA3D9025DBBD3E00EF4FB6 /* Info.plist */,
 			);
 			path = "Great Wisdom";
@@ -164,7 +194,6 @@
 				32DCC760A02C1FE30792043F /* Pods-Great Wisdom.debug.xcconfig */,
 				4C9DE204C70C7706CA03A15E /* Pods-Great Wisdom.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -283,6 +312,7 @@
 			files = (
 				08AAFCB025DBEABD00A90B2D /* OpenSansCondensed-LightItalic.ttf in Resources */,
 				08DA3D8F25DBBD3E00EF4FB6 /* LaunchScreen.storyboard in Resources */,
+				089FEA3025DD7DAB00787A4A /* TableViewCell.xib in Resources */,
 				08AAFCB325DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf in Resources */,
 				08DA3D8C25DBBD3E00EF4FB6 /* Assets.xcassets in Resources */,
 				08AAFCAD25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */,
@@ -360,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08DA3D8725DBBD3D00EF4FB6 /* ViewController.swift in Sources */,
+				089FEA2F25DD7DAB00787A4A /* TableViewCell.swift in Sources */,
 				08DA3D8325DBBD3D00EF4FB6 /* AppDelegate.swift in Sources */,
 				08DA3D8525DBBD3D00EF4FB6 /* SceneDelegate.swift in Sources */,
 			);
