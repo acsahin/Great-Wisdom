@@ -7,97 +7,109 @@
 
 import SideMenu
 import UIKit
+import Firebase
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SideMenuControllerDelegate {
+    @IBOutlet var quoteText: UILabel!
+    @IBOutlet var authorText: UILabel!
+    @IBOutlet weak var nextButton: UIImageView!
+    @IBOutlet weak var backButton: UIImageView!
+    @IBOutlet weak var randomButton: UIImageView!
     
-    private let sideMenu = SideMenuNavigationController(rootViewController: SideMenuController())
+    private var sideMenu: CustomSideMenuNavigationController?
+    private let aboutViewController = AboutViewController()
+    
+    let db = Firestore.firestore()
+    var quotes: [QuoteModel] = []
+    var quoteOrder = 0
+    
+    private func addChildControllers() {
+        addChild(aboutViewController)
+        view.addSubview(aboutViewController.view)
+        aboutViewController.view.frame = view.bounds
+        aboutViewController.didMove(toParent: self)
+        aboutViewController.view.isHidden = true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        sideMenu.setNavigationBarHidden(true, animated: true)
-        sideMenu.leftSide = true
-        sideMenu.presentationStyle = .menuSlideIn
-        sideMenu.presentationStyle.presentingEndAlpha = 0.5
-        sideMenu.presentationStyle.backgroundColor = .systemGray4
-        sideMenu.menuWidth = UIScreen.main.bounds.width/3+10
+        nextButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.nextQuote)))
+        backButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.backQuote)))
+        randomButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.randomQuote)))
+        
+        let menuController = SideMenuController()
+        menuController.delegate = self
+        sideMenu = CustomSideMenuNavigationController(rootViewController: menuController)
+        
+        addChildControllers()
+        
+        loadQuotes()
+    }
+    
+    @objc func nextQuote() {
+        if quoteOrder == quotes.count-1 {
+            quoteOrder = 0
+        }else{
+            quoteOrder += 1
+        }
+        changeQuote()
+    }
+    
+    @objc func backQuote() {
+        if quoteOrder == 0 {
+            quoteOrder = quotes.count-1
+        }else{
+            quoteOrder -= 1
+        }
+        changeQuote()
+    }
+    
+    @objc func randomQuote() {
+        quoteOrder = Int.random(in: 0..<quotes.count)
+        changeQuote()
+    }
+    
+    func didSelectMenuItem(named: String) {
+        sideMenu?.dismiss(animated: true, completion: {
+            if named == "Home" {
+                self.aboutViewController.view.isHidden = true
+                self.title = named
+            }else if named == "About" {
+                self.aboutViewController.view.isHidden = false
+                self.title = named
+            }else if named == "More Apps" {
+                self.performSegue(withIdentifier: "goToMoreApps", sender: self)
+            }else {
+                self.title = named
+            }
+        })
     }
     
     @IBAction func didTapMenuButton() {
-        present(sideMenu, animated: true)
-    }
-}
-
-class SideMenuController: UITableViewController {
-    let data = [["Home", "Today", "Favourites"], ["About", "More Apps"]]
-    let sections = ["Great Wisdom", "Other"]
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
-        
-        //TableView Header Image
-        let header = UIView(frame : CGRect(x : 0,y : 0, width: (UIScreen.main.bounds.width/3)+10, height: (2*UIScreen.main.bounds.width/5)+50))
-        let imageHeader = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width/3, height: 2*UIScreen.main.bounds.width/5))
-        imageHeader.image = UIImage(named: "Dostoevsky")
-        
-        //Image Effects
-        let maskLayer = CAGradientLayer()
-        maskLayer.frame = imageHeader.bounds
-        maskLayer.shadowRadius = 3
-        maskLayer.shadowPath = CGPath(roundedRect: imageHeader.bounds.insetBy(dx: 5, dy: 5), cornerWidth: 5, cornerHeight: 5, transform: nil)
-        maskLayer.shadowOpacity = 1.0;
-        maskLayer.shadowOffset = CGSize.zero;
-        maskLayer.shadowColor = UIColor.systemBackground.cgColor
-        imageHeader.layer.mask = maskLayer;
-        imageHeader.center = header.center
-        header.addSubview(imageHeader)
-        tableView.tableHeaderView = header
-        tableView.separatorStyle = .none
-        
-        tableView.isScrollEnabled = false
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data[section].count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
-        cell.label.text = data[indexPath.section][indexPath.row]
-        return cell
-    }
-
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section]
+        present(sideMenu!, animated: true)
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return data.count
+    func loadQuotes() {
+        db.collection("quotes").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let data = document.data()
+                    if let quoteInfo = data["quote"] as? String {
+                        if let authorInfo = data["author"] as? String {
+                            let model = QuoteModel(quote: quoteInfo, author: authorInfo)
+                            self.quotes.append(model)
+                        }
+                    }
+                }
+                self.changeQuote()
+            }
+        }
     }
     
-    
-    //Custom header view
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 40.0))
-        headerView.backgroundColor = .secondarySystemBackground
-        let label = UILabel()
-        label.frame = CGRect.init(x: 15, y: 10, width: headerView.frame.width, height: headerView.frame.height-10)
-        label.text = sections[section]
-        label.font = .boldSystemFont(ofSize: 16)
-        headerView.addSubview(label)
-
-        return headerView
-    }
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40.0
-    }
-    
-    
-    //Space between sections
-    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 50.0))
-    }
-    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 50.0
+    func changeQuote() {
+        quoteText.text = quotes[quoteOrder].quote
+        authorText.text = quotes[quoteOrder].author
     }
 }

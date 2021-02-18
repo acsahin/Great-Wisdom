@@ -2,14 +2,14 @@
 //  TableViewCell.swift
 //  Great Wisdom
 //
-//  Created by ACS on 17.02.2021.
+//  Created by ACS on 18.02.2021.
 //
 
 import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    @IBOutlet weak var customCell: UIView!
+    @IBOutlet var imageIcon: UIImageView!
     @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {

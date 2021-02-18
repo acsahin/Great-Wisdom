@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		089FEA2F25DD7DAB00787A4A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FEA2D25DD7DAB00787A4A /* TableViewCell.swift */; };
-		089FEA3025DD7DAB00787A4A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089FEA2E25DD7DAB00787A4A /* TableViewCell.xib */; };
 		08AAFCAD25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */; };
 		08AAFCAE25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */; };
 		08AAFCAF25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */; };
@@ -18,10 +16,17 @@
 		08AAFCB325DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAC25DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf */; };
 		08AAFCB425DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAC25DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf */; };
 		08AAFCB525DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAC25DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf */; };
+		08BEB66225DEB5C10052F23A /* CustomSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB66125DEB5C10052F23A /* CustomSideMenu.swift */; };
+		08BEB67E25DEC8010052F23A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB67C25DEC8010052F23A /* TableViewCell.swift */; };
+		08BEB67F25DEC8010052F23A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08BEB67D25DEC8010052F23A /* TableViewCell.xib */; };
+		08BEB69125DEE9D00052F23A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08BEB69025DEE9D00052F23A /* GoogleService-Info.plist */; };
+		08BEB6D225DF0D3A0052F23A /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB6D125DF0D3A0052F23A /* QuoteModel.swift */; };
+		08BEB6DA25DF175E0052F23A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BEB6D925DF175E0052F23A /* Main.storyboard */; };
+		08BEB6F725DF269E0052F23A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB6F625DF269E0052F23A /* AboutViewController.swift */; };
+		08BEB6FC25DF26E60052F23A /* MoreAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB6FB25DF26E60052F23A /* MoreAppsViewController.swift */; };
 		08DA3D8325DBBD3D00EF4FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D8225DBBD3D00EF4FB6 /* AppDelegate.swift */; };
 		08DA3D8525DBBD3D00EF4FB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D8425DBBD3D00EF4FB6 /* SceneDelegate.swift */; };
 		08DA3D8725DBBD3D00EF4FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */; };
-		08DA3D8A25DBBD3D00EF4FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DA3D8825DBBD3D00EF4FB6 /* Main.storyboard */; };
 		08DA3D8C25DBBD3E00EF4FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08DA3D8B25DBBD3E00EF4FB6 /* Assets.xcassets */; };
 		08DA3D8F25DBBD3E00EF4FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DA3D8D25DBBD3E00EF4FB6 /* LaunchScreen.storyboard */; };
 		08DA3D9A25DBBD3E00EF4FB6 /* Great_WisdomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D9925DBBD3E00EF4FB6 /* Great_WisdomTests.swift */; };
@@ -47,16 +52,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		089FEA2D25DD7DAB00787A4A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		089FEA2E25DD7DAB00787A4A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-Light.ttf"; sourceTree = "<group>"; };
 		08AAFCAB25DBEABD00A90B2D /* OpenSansCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		08AAFCAC25DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		08BEB66125DEB5C10052F23A /* CustomSideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideMenu.swift; sourceTree = "<group>"; };
+		08BEB67C25DEC8010052F23A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		08BEB67D25DEC8010052F23A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		08BEB69025DEE9D00052F23A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08BEB6D125DF0D3A0052F23A /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		08BEB6D925DF175E0052F23A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		08BEB6F625DF269E0052F23A /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		08BEB6FB25DF26E60052F23A /* MoreAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreAppsViewController.swift; sourceTree = "<group>"; };
 		08DA3D7F25DBBD3D00EF4FB6 /* Great Wisdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Great Wisdom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DA3D8225DBBD3D00EF4FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08DA3D8425DBBD3D00EF4FB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		08DA3D8925DBBD3D00EF4FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08DA3D8B25DBBD3E00EF4FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08DA3D8E25DBBD3E00EF4FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08DA3D9025DBBD3E00EF4FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +110,7 @@
 		089E9EFB25DD4F65009FCCCD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				08BEB6D125DF0D3A0052F23A /* QuoteModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,10 +118,10 @@
 		089E9EFC25DD4F6D009FCCCD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				08BEB6D925DF175E0052F23A /* Main.storyboard */,
 				08DA3D8D25DBBD3E00EF4FB6 /* LaunchScreen.storyboard */,
-				08DA3D8825DBBD3D00EF4FB6 /* Main.storyboard */,
-				089FEA2D25DD7DAB00787A4A /* TableViewCell.swift */,
-				089FEA2E25DD7DAB00787A4A /* TableViewCell.xib */,
+				08BEB67C25DEC8010052F23A /* TableViewCell.swift */,
+				08BEB67D25DEC8010052F23A /* TableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,7 +129,10 @@
 		089E9EFD25DD4F73009FCCCD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				08BEB6FB25DF26E60052F23A /* MoreAppsViewController.swift */,
 				08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */,
+				08BEB66125DEB5C10052F23A /* CustomSideMenu.swift */,
+				08BEB6F625DF269E0052F23A /* AboutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,6 +180,7 @@
 				08DA3D8425DBBD3D00EF4FB6 /* SceneDelegate.swift */,
 				08DA3D8B25DBBD3E00EF4FB6 /* Assets.xcassets */,
 				08DA3D9025DBBD3E00EF4FB6 /* Info.plist */,
+				08BEB69025DEE9D00052F23A /* GoogleService-Info.plist */,
 			);
 			path = "Great Wisdom";
 			sourceTree = "<group>";
@@ -311,12 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AAFCB025DBEABD00A90B2D /* OpenSansCondensed-LightItalic.ttf in Resources */,
+				08BEB69125DEE9D00052F23A /* GoogleService-Info.plist in Resources */,
 				08DA3D8F25DBBD3E00EF4FB6 /* LaunchScreen.storyboard in Resources */,
-				089FEA3025DD7DAB00787A4A /* TableViewCell.xib in Resources */,
+				08BEB6DA25DF175E0052F23A /* Main.storyboard in Resources */,
+				08BEB67F25DEC8010052F23A /* TableViewCell.xib in Resources */,
 				08AAFCB325DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf in Resources */,
 				08DA3D8C25DBBD3E00EF4FB6 /* Assets.xcassets in Resources */,
 				08AAFCAD25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */,
-				08DA3D8A25DBBD3D00EF4FB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,10 +405,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08BEB67E25DEC8010052F23A /* TableViewCell.swift in Sources */,
 				08DA3D8725DBBD3D00EF4FB6 /* ViewController.swift in Sources */,
-				089FEA2F25DD7DAB00787A4A /* TableViewCell.swift in Sources */,
+				08BEB66225DEB5C10052F23A /* CustomSideMenu.swift in Sources */,
+				08BEB6F725DF269E0052F23A /* AboutViewController.swift in Sources */,
 				08DA3D8325DBBD3D00EF4FB6 /* AppDelegate.swift in Sources */,
+				08BEB6FC25DF26E60052F23A /* MoreAppsViewController.swift in Sources */,
 				08DA3D8525DBBD3D00EF4FB6 /* SceneDelegate.swift in Sources */,
+				08BEB6D225DF0D3A0052F23A /* QuoteModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,14 +448,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		08DA3D8825DBBD3D00EF4FB6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08DA3D8925DBBD3D00EF4FB6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		08DA3D8D25DBBD3E00EF4FB6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
