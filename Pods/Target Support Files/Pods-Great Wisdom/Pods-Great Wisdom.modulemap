@@ -1,0 +1,6 @@
+framework module Pods_Great_Wisdom {
+  umbrella header "Pods-Great Wisdom-umbrella.h"
+
+  export *
+  module * { export * }
+}
