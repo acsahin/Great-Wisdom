@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="56Y-73-o36">
-                        <rect key="frame" x="30" y="8" width="337" height="134"/>
+                        <rect key="frame" x="15" y="8" width="352" height="134"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quote" translatesAutoresizingMaskIntoConstraints="NO" id="Snx-do-GFf">
                                 <rect key="frame" x="0.0" y="55" width="24" height="24"/>
@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNs-85-CDF">
-                                <rect key="frame" x="39" y="2" width="298" height="130"/>
+                                <rect key="frame" x="39" y="2" width="313" height="130"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                     <constraint firstItem="56Y-73-o36" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6EA-Na-QrI"/>
                     <constraint firstAttribute="bottom" secondItem="56Y-73-o36" secondAttribute="bottom" constant="8" id="KLS-Vi-vNm"/>
                     <constraint firstAttribute="trailing" secondItem="56Y-73-o36" secondAttribute="trailing" id="UXw-er-htk"/>
-                    <constraint firstItem="56Y-73-o36" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="eBa-hq-YDj"/>
+                    <constraint firstItem="56Y-73-o36" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="eBa-hq-YDj"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

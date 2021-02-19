@@ -106,6 +106,12 @@
                                 <action selector="didTapMenuButton" destination="BYZ-38-t0r" id="SvW-iB-lTt"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="hS3-KN-jUG">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="searchButton:" destination="BYZ-38-t0r" id="jaI-gl-km7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="authorText" destination="2Gb-4A-EeY" id="0iw-o9-fS8"/>
@@ -114,6 +120,7 @@
                         <outlet property="quoteText" destination="9fJ-IM-Gmj" id="o23-Yk-SvP"/>
                         <outlet property="randomButton" destination="4kg-Ul-85k" id="fZx-vf-wPE"/>
                         <segue destination="jh6-ao-u0Z" kind="presentation" identifier="goToMoreApps" id="PDU-WA-p9D"/>
+                        <segue destination="wre-3j-Zpo" kind="show" identifier="goToSearch" id="YOx-7o-EpH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -152,7 +159,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9t-2T-hWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1603.7383177570093" y="114.68682505399569"/>
+            <point key="canvasLocation" x="1646" y="-244"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="8xo-Ut-Bwa">
+            <objects>
+                <viewController id="wre-3j-Zpo" customClass="SearchViewController" customModule="Great_Wisdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rEq-Uq-7ng">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yUb-e0-eNL">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchCell" textLabel="Ecz-2j-Cio" detailTextLabel="MCT-Nk-Yol" style="IBUITableViewCellStyleSubtitle" id="hm6-ri-Zjq">
+                                        <rect key="frame" x="0.0" y="28" width="428" height="55.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hm6-ri-Zjq" id="IHT-xT-h1w">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="55.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ecz-2j-Cio">
+                                                    <rect key="frame" x="20" y="8.9999999999999982" width="33" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MCT-Nk-Yol">
+                                                    <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7ag-hz-B3f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7ag-hz-B3f" firstAttribute="bottom" secondItem="yUb-e0-eNL" secondAttribute="bottom" id="BQi-Aq-OPu"/>
+                            <constraint firstItem="7ag-hz-B3f" firstAttribute="trailing" secondItem="yUb-e0-eNL" secondAttribute="trailing" id="DD0-iC-cCf"/>
+                            <constraint firstItem="yUb-e0-eNL" firstAttribute="top" secondItem="7ag-hz-B3f" secondAttribute="top" id="PAn-I8-Daa"/>
+                            <constraint firstItem="yUb-e0-eNL" firstAttribute="leading" secondItem="7ag-hz-B3f" secondAttribute="leading" id="WTt-GI-rdZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="chk-vF-x6M" id="v7M-Wk-3aH"/>
+                        <outlet property="tableView" destination="yUb-e0-eNL" id="QUh-Ob-gH2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4T4-2T-Ksb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" placeholder="Search for quote" id="chk-vF-x6M">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </objects>
+            <point key="canvasLocation" x="1646" y="492"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wcx-Yu-ttl">
@@ -173,12 +242,14 @@
             <point key="canvasLocation" x="139.95680345572356" y="114.95327102803738"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="labelColor"/>
     <resources>
         <image name="Quote" width="85.333335876464844" height="85.333335876464844"/>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -33,6 +33,7 @@ class ViewController: UIViewController, SideMenuControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backButtonTitle = ""
         nextButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.nextQuote)))
         backButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.backQuote)))
         randomButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.randomQuote)))
@@ -111,5 +112,16 @@ class ViewController: UIViewController, SideMenuControllerDelegate {
     func changeQuote() {
         quoteText.text = quotes[quoteOrder].quote
         authorText.text = quotes[quoteOrder].author
+    }
+    
+    @IBAction func searchButton(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "goToSearch", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToSearch" {
+            let destinationVC = segue.destination as! SearchViewController
+            destinationVC.mainData = quotes
+        }
     }
 }

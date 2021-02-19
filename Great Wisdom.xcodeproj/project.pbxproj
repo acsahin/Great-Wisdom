@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0822FE8825E00C98002E0C57 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0822FE8725E00C98002E0C57 /* SearchViewController.swift */; };
 		08AAFCAD25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */; };
 		08AAFCAE25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */; };
 		08AAFCAF25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0822FE8725E00C98002E0C57 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		08AAFCAA25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-Light.ttf"; sourceTree = "<group>"; };
 		08AAFCAB25DBEABD00A90B2D /* OpenSansCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		08AAFCAC25DBEABD00A90B2D /* OpenSansCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-Bold.ttf"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */,
 				08BEB66125DEB5C10052F23A /* CustomSideMenu.swift */,
 				08BEB6F625DF269E0052F23A /* AboutViewController.swift */,
+				0822FE8725E00C98002E0C57 /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				08BEB67E25DEC8010052F23A /* TableViewCell.swift in Sources */,
 				08DA3D8725DBBD3D00EF4FB6 /* ViewController.swift in Sources */,
 				08BEB66225DEB5C10052F23A /* CustomSideMenu.swift in Sources */,
+				0822FE8825E00C98002E0C57 /* SearchViewController.swift in Sources */,
 				08BEB6F725DF269E0052F23A /* AboutViewController.swift in Sources */,
 				08DA3D8325DBBD3D00EF4FB6 /* AppDelegate.swift in Sources */,
 				08BEB6FC25DF26E60052F23A /* MoreAppsViewController.swift in Sources */,
