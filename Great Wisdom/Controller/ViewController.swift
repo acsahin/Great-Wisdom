@@ -23,6 +23,7 @@ class ViewController: UIViewController, SideMenuControllerDelegate {
     var quotes: [QuoteModel] = []
     var quoteOrder = 0
     
+    
     private func addChildControllers() {
         addChild(aboutViewController)
         view.addSubview(aboutViewController.view)
@@ -72,15 +73,16 @@ class ViewController: UIViewController, SideMenuControllerDelegate {
     
     func didSelectMenuItem(named: String) {
         sideMenu?.dismiss(animated: true, completion: {
-            if named == "Home" {
+            if named == kString_home.localize() {
                 self.aboutViewController.view.isHidden = true
                 self.title = named
-            }else if named == "About" {
+            }else if named == kString_about.localize() {
                 self.aboutViewController.view.isHidden = false
                 self.title = named
-            }else if named == "More Apps" {
-                self.performSegue(withIdentifier: "goToMoreApps", sender: self)
+            }else if named == kString_moreApps.localize() {
+                self.performSegue(withIdentifier: kIdentifier_segue_toMoreApps, sender: self)
             }else {
+                print("buldun")
                 self.title = named
             }
         })
@@ -91,14 +93,17 @@ class ViewController: UIViewController, SideMenuControllerDelegate {
     }
     
     func loadQuotes() {
-        db.collection("quotes").getDocuments() { (querySnapshot, err) in
+        print(Locale.current.languageCode! as String)
+        let collection = db.collection("quotes")
+        
+        collection.getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
                 for document in querySnapshot!.documents {
                     let data = document.data()
-                    if let quoteInfo = data["quote"] as? String {
-                        if let authorInfo = data["author"] as? String {
+                    if let authorInfo = data["author"] as? String {
+                        if let quoteInfo = data[Locale.current.languageCode! as String] as? String {
                             let model = QuoteModel(quote: quoteInfo, author: authorInfo)
                             self.quotes.append(model)
                         }
@@ -107,6 +112,7 @@ class ViewController: UIViewController, SideMenuControllerDelegate {
                 self.changeQuote()
             }
         }
+        
     }
     
     func changeQuote() {
@@ -115,11 +121,11 @@ class ViewController: UIViewController, SideMenuControllerDelegate {
     }
     
     @IBAction func searchButton(_ sender: UIBarButtonItem) {
-        self.performSegue(withIdentifier: "goToSearch", sender: self)
+        self.performSegue(withIdentifier: kIdentifier_segue_toSearch, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToSearch" {
+        if segue.identifier == kIdentifier_segue_toSearch {
             let destinationVC = segue.destination as! SearchViewController
             destinationVC.mainData = quotes
         }

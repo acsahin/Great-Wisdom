@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Ecz-2j-Cio"; */
+"Ecz-2j-Cio.text" = "Title";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "MCT-Nk-Yol"; */
+"MCT-Nk-Yol.text" = "Subtitle";
+
+/* Class = "UISearchBar"; placeholder = "Search for quote or author"; ObjectID = "chk-vF-x6M"; */
+"chk-vF-x6M.placeholder" = "Search for quote or author...";

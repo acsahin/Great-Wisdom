@@ -16,19 +16,19 @@ class CustomSideMenuNavigationController: SideMenuNavigationController {
 class SideMenuController: UITableViewController {
     public var delegate: SideMenuControllerDelegate?
     
-    let data = [["Home", "Favourites", "About"], ["Settings", "More Apps"]]
-    let sections = ["Great Wisdom", "Other"]
+    let data = [kString_home.localize(), kString_about.localize(), kString_moreApps.localize()]
+    let sections = [kString_appName]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
 //MARK: - Register with custom cell
-        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+        tableView.register(UINib(nibName: kName_sideMenu_tableViewCell, bundle: nil), forCellReuseIdentifier: kIdentifier_sideMenu_tableCellIdentifier)
         
         //TableView Header Image
         let header = UIView(frame : CGRect(x : 0,y : 0, width: (UIScreen.main.bounds.width/3)+10, height: (2*UIScreen.main.bounds.width/5)+50))
         let imageHeader = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width/3, height: 2*UIScreen.main.bounds.width/5))
-        imageHeader.image = UIImage(named: "Dostoevsky")
+        imageHeader.image = UIImage(named: kImageName_sideMenuHeader)
         
 //MARK: - Header Image Effects
         let maskLayer = CAGradientLayer()
@@ -50,32 +50,27 @@ class SideMenuController: UITableViewController {
     
 //MARK: - Cell
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data[section].count
+        return data.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
-        cell.label.text = data[indexPath.section][indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: kIdentifier_sideMenu_tableCellIdentifier, for: indexPath) as! TableViewCell
+        cell.label.text = data[indexPath.row]
         
         //Icons for sections
-        switch data[indexPath.section][indexPath.row] {
-        case data[0][0]:
-            cell.imageIcon.image = UIImage(systemName: "house.fill")
-        case data[0][1]:
-            cell.imageIcon.image = UIImage(systemName: "star.fill")
-        case data[0][2]:
-            cell.imageIcon.image = UIImage(systemName: "info.circle.fill")
-        case data[1][0]:
-            cell.imageIcon.image = UIImage(systemName: "gearshape.fill")
-        case data[1][1]:
-            cell.imageIcon.image = UIImage(systemName: "apps.iphone")
+        switch data[indexPath.row] {
+        case data[0]:
+            cell.imageIcon.image = UIImage(systemName: kIconName_home)
+        case data[1]:
+            cell.imageIcon.image = UIImage(systemName: kIconName_about)
+        case data[2]:
+            cell.imageIcon.image = UIImage(systemName: kIconName_moreApps)
         default:
-            cell.imageIcon.image = UIImage(named: "Quote")
+            cell.imageIcon.image = UIImage(named: kIconName_app)
         }
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedItem = data[indexPath.section][indexPath.row]
-        delegate?.didSelectMenuItem(named: selectedItem)
+        delegate?.didSelectMenuItem(named: data[indexPath.row])
     }
 
 
@@ -108,7 +103,7 @@ class SideMenuController: UITableViewController {
         return 50.0
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return data.count
+        return sections.count
     }
 }
 

@@ -24,7 +24,7 @@ class MoreAppsViewController: UIViewController, WKUIDelegate {
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.uiDelegate = self
         view = webView
-        let url = URL(string: "https://play.google.com/store/apps/details?id=com.acs.tabuu_app")
+        let url = URL(string: kUrlString_moreApps)
         let request = URLRequest(url: url!)
         webView.load(request)
     }

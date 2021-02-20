@@ -43,7 +43,7 @@ extension SearchViewController: UITableViewDataSource {
         return filteredData.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: kIdentifier_searchView_tableCellIdentifier, for: indexPath)
         cell.textLabel?.text = filteredData[indexPath.row].quote
         cell.detailTextLabel?.text = filteredData[indexPath.row].author
         return cell
