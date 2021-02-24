@@ -1,6 +1,5 @@
 # Great Wisdom
 
-![dark-gif](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/Wisdom-DarkMode.gif)
 ![dark-gif](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/Wisdom-LightMode.gif)
 
 ##### The hidden wisdom of books
@@ -24,8 +23,8 @@ Great wisdom is an iOS application. Shows quotes and authors from the best books
 
 #####  Light Theme
 | -------------------------- | -------------------------- |
-| ![](lightPhoto1.png)       | ![](lightPhoto2.png)       |
+| ![](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto1.png)       | ![](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto2.png)       |
 
 #####  DARK Theme              |
 | -------------------------- | -------------------------- |
-| ![](darkPhoto1.png)        | ![](darkPhoto2.png)        |
+| ![](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto1.png)        | ![](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto2.png)        |
