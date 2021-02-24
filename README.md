@@ -25,8 +25,8 @@ Great wisdom is an iOS application. Shows quotes and authors from the best books
 ---
 
 <p align="center">
-  <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto1.png" alt="alt text" width="300" height="700">
-  <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto2.png" alt="alt text" width="300" height="700">
+  <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto1.png" alt="alt text" width="330" height="700">
+  <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto2.png" alt="alt text" width="330" height="700">
 </p>
 
 
@@ -34,7 +34,7 @@ Great wisdom is an iOS application. Shows quotes and authors from the best books
 ---
 
 <p align="center">
-  <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto1.png" alt="alt text" width="300" height="700">
-  <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto2.png" alt="alt text" width="300" height="700">
+  <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto1.png" alt="alt text" width="330" height="700">
+  <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto2.png" alt="alt text" width="330" height="700">
 </p>
 
