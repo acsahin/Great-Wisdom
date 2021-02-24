@@ -28,6 +28,7 @@
 		08BEB6D225DF0D3A0052F23A /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB6D125DF0D3A0052F23A /* QuoteModel.swift */; };
 		08BEB6F725DF269E0052F23A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB6F625DF269E0052F23A /* AboutViewController.swift */; };
 		08BEB6FC25DF26E60052F23A /* MoreAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB6FB25DF26E60052F23A /* MoreAppsViewController.swift */; };
+		08D7BF8E25E5FC52009BCB09 /* Examples in Resources */ = {isa = PBXBuildFile; fileRef = 08D7BF8D25E5FC52009BCB09 /* Examples */; };
 		08DA3D8325DBBD3D00EF4FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D8225DBBD3D00EF4FB6 /* AppDelegate.swift */; };
 		08DA3D8525DBBD3D00EF4FB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D8425DBBD3D00EF4FB6 /* SceneDelegate.swift */; };
 		08DA3D8725DBBD3D00EF4FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DA3D8625DBBD3D00EF4FB6 /* ViewController.swift */; };
@@ -74,6 +75,7 @@
 		08BEB6D125DF0D3A0052F23A /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
 		08BEB6F625DF269E0052F23A /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		08BEB6FB25DF26E60052F23A /* MoreAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreAppsViewController.swift; sourceTree = "<group>"; };
+		08D7BF8D25E5FC52009BCB09 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = "<group>"; };
 		08DA3D7F25DBBD3D00EF4FB6 /* Great Wisdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Great Wisdom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DA3D8225DBBD3D00EF4FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08DA3D8425DBBD3D00EF4FB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		08DA3D7625DBBD3D00EF4FB6 = {
 			isa = PBXGroup;
 			children = (
+				08D7BF8D25E5FC52009BCB09 /* Examples */,
 				08DA3D8125DBBD3D00EF4FB6 /* Great Wisdom */,
 				08DA3D9825DBBD3E00EF4FB6 /* Great WisdomTests */,
 				08DA3DA325DBBD3E00EF4FB6 /* Great WisdomUITests */,
@@ -358,6 +361,7 @@
 				08A2291F25E07540008B4A64 /* Main.storyboard in Resources */,
 				08DA3D8C25DBBD3E00EF4FB6 /* Assets.xcassets in Resources */,
 				08AAFCAD25DBEABD00A90B2D /* OpenSansCondensed-Light.ttf in Resources */,
+				08D7BF8E25E5FC52009BCB09 /* Examples in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
