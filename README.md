@@ -23,8 +23,9 @@ Great wisdom is an iOS application. Shows quotes and authors from the best books
 
 #####  Light Theme
 | -------------------------- | -------------------------- |
-| ![](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto1.png =100x20)      | ![](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto2.png =100x20)      |
+| <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto1.png" alt="alt text" width="100" height="100">      | <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/lightPhoto2.png" alt="alt text" width="100" height="100">      |
 
 #####  DARK Theme              |
 | -------------------------- | -------------------------- |
-| ![](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto1.png =100x20)      | ![](https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto2.png =100x20)       |
+| <img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto1.png" alt="alt text" width="100" height="100">       |
+img src="https://github.com/ahmetcemalsahin/Great-Wisdom/blob/main/Examples/darkPhoto1.png" alt="alt text" width="100" height="100">
